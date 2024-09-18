@@ -3,6 +3,7 @@
     --med-contrast: #474543;
     --low-contrast: #8B8685;
     --light-contrast: #F6F5F5;
+    --lightest-contrast: #F6F5F5;
     --white: #FFFFFF;
     --primary: #F74872;
     --primary-gradient: linear-gradient(90deg, #F74872, #FC7B49 50%, #F74872 100%);
@@ -23,6 +24,7 @@ body {
     font-weight: 400;
     font-family: var(--body-font);
     color: var(--med-contrast);
+    background-color: var(--lightest-contrast);
 }
 img {
     max-width: 100%;
@@ -54,4 +56,8 @@ h3 {
 .small {
     font-size: 16px;
     line-height: 1.5;
+}
+.container {
+    max-width: 1368px;
+    padding: 0 24px;
 }
