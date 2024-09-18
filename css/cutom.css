@@ -31,6 +31,8 @@ img {
     height: auto;
 }
 a, button, input[type="submit"] {
+    display: inline-block;
+    text-decoration: none;
     transition: all 0.4s;
 }
 ul {
@@ -60,4 +62,48 @@ h3 {
 .container {
     max-width: 1368px;
     padding: 0 24px;
+}
+/* Header Style */
+header {
+    padding: 16px 0;
+    background-color: var(--white);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+nav#main-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 0 auto;
+}
+nav#main-nav ul li a {
+    padding: 4px;
+    font-size: 16px;
+    color: var(--high-contrast);
+    letter-spacing: 0.2px;
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+a.my-account {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 16px 4px 4px;
+    background: var(--lightest-contrast);
+    border-radius: 20px;
+}
+a.my-account > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+}
+a.my-account > span {
+    font-size: 13px;
+    color: var(--high-contrast);
 }

@@ -13,11 +13,18 @@
 <body>
     <header>
         <div class="container">
-            <div class="row">
+            <div class="row g-0 gx-lg-4 align-items-center">
                 <div class="col-auto">
-                    <a href="./index.html" class="site-logo">
-                        <img src="./img/logo.svg" alt="site_logo">
-                    </a>
+                    <div class="nav-logo">
+                        <button class="hamburger d-lg-none" data-bs-toggle="collapse" data-bs-target="#main-nav" onclick="document.body.classList.toggle('menu-active')">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <a href="./index.html" class="site-logo">
+                            <img src="./img/logo.svg" alt="site_logo">
+                        </a>
+                    </div>
                 </div>
                 <div class="col navbar-expand-lg">
                     <nav id="main-nav" class="collapse navbar-collapse">
@@ -38,11 +45,6 @@
                             <img src="./img/icon/bag-wrap.png" alt="">
                             <span>1 Item</span>
                         </a>
-                        <button class="hamburger d-lg-none" data-bs-toggle="collapse" data-bs-target="#main-nav">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -55,7 +57,9 @@
 
 
     <footer>
-        
+        <div class="container">
+            
+        </div>
     </footer>
 
 
