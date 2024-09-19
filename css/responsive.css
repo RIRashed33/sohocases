@@ -53,19 +53,24 @@
         width: 30px;
         height: 30px;
     }
-    body.menu-active nav#main-nav {
+    nav.main-nav {
         position: fixed;
         width: 300px;
         max-width: 100%;
         top: 62px;
-        left: 0;
+        left: -100%;
         height: calc(100% - 62px);
         z-index: 9;
         padding: 12px;
         background-color: var(--white);
         border-top: 1px solid var(--med-contrast);
+        transition: all 0.4s;
     }
-    body.menu-active nav#main-nav ul {
+    body.menu-active nav.main-nav {
+        left: 0;
+        box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.1);
+    }
+    body.menu-active nav.main-nav ul {
         margin: 0;
         flex-direction: column;
         align-items: flex-start;
@@ -76,7 +81,7 @@
 
 }
 @media screen and (min-width: 992px){
-    nav#main-nav ul li a:hover {
+    nav.main-nav ul li a:hover {
         font-weight: 600;
         letter-spacing: 0;
         background: var(--primary-gradient);

@@ -16,7 +16,7 @@
             <div class="row g-0 gx-lg-4 align-items-center">
                 <div class="col-auto">
                     <div class="nav-logo">
-                        <button class="hamburger d-lg-none" data-bs-toggle="collapse" data-bs-target="#main-nav" onclick="document.body.classList.toggle('menu-active')">
+                        <button class="hamburger d-lg-none" onclick="document.body.classList.toggle('menu-active')">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="col navbar-expand-lg">
-                    <nav id="main-nav" class="collapse navbar-collapse">
+                    <nav class="main-nav">
                         <ul>
                             <li><a href="./about.html">About</a></li>
                             <li><a href="./products.html">Products</a></li>
@@ -51,9 +51,64 @@
         </div>
     </header>
 
+    <div class="product-cart">
+        <div class="cart-heading">
+            <h5>Shopping Cart</h5>
+            <button class="close-icon">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="cart-content">
+            <div class="cart-items">
+                <div class="single-product">
+                    <div class="cart-product-img">
+                        <img src="./img/cart-item-sample.jpg" alt="">
+                    </div>
+                    <div class="cart-product-details">
+                        <div class="d-flex gap-3">
+                            <p>Product name case</p>
+                            <p>$23.63</p>
+                        </div>
+                        <div class="product-discout">
+                            <p>$25.99</p>
+                            <p>$23.63</p>
+                            <p>10% OFF</p>
+                        </div>
+                        <div class="cart-product-action">
+                            <div class="product-action-btn">
+                                <button class="favourite-btn">
+                                    <img src="./img/icon/favorite.png" alt="">
+                                </button>
+                                <button class="remove-btn">
+                                    <img src="./img/icon/remove.png" alt="">
+                                </button>
+                            </div>
+                            <div class="product-qty">
+                                <button class="decrement-btn">
+                                    <span class="minus-icon"></span>
+                                </button>
+                                <button class="increment-btn">
+                                    <span class="plus-icon"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-
-
+            </div>
+            <div class="cart-checkout">
+                <div class="cart-subtotal">
+                    <p>Subtotal</p>
+                    <p>$94.52</p>
+                </div>
+                <span class="horizontal"></span>
+                <div class="checkout">
+                    <button class="">go to checkout <img src="./img/icon/arrow-top-right.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <footer>
