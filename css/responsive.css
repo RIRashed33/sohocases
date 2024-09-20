@@ -72,6 +72,9 @@
         align-items: flex-start;
         gap: 12px;
     }
+    span.vertical {
+        display: none;
+    }
     main {
         padding-top: 64px;
     }
@@ -93,6 +96,14 @@
     }
     .single-product, .product-title {
         gap: 12px;
+    }
+    .footer-row > * {
+        flex: 1 1 100% !important;
+    }
+    .footer-content {
+        padding: 48px 12px;
+        margin: 0 -12px;
+        border-radius: 0;
     }
 
 

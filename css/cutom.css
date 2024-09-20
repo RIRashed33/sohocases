@@ -56,6 +56,9 @@ h3 {
     line-height: 1.3;
     font-weight: 700;
 }
+h6 {
+    font-size: 20px;
+}
 .small {
     font-size: 16px;
     line-height: 1.5;
@@ -326,9 +329,40 @@ span.plus-icon::after {
     flex: 0 0 200px;
 }
 .footer-row > *:not(.footer-left, span) {
-    flex: 0 0 120px;
+    flex: 0 0 125px;
 }
-
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: space-between;
+}
+.benefits-list ul li:not(li:last-child) {
+    margin-bottom: 16px;
+}
+.benefits-list ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.benefits-list ul li span {
+    display: inline-flex;
+    width: 20px;
+    justify-content: center;
+}
+span.vertical {
+    width: 1px;
+    background: #494646;
+}
+.footer-nav ul li:not(li:last-child) {
+    margin-bottom: 8px;
+}
+.footer-nav ul li a {
+    color: var(--white);
+}
+.footer-nav ul li a:hover {
+    color: var(--primary);
+}
 
 
 /* Main Area Style */
