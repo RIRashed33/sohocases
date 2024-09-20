@@ -115,7 +115,7 @@ nav.main-nav ul li a {
     align-items: center;
     gap: 8px;
 }
-a.my-account {
+.my-account, .cart-btn  {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -123,12 +123,21 @@ a.my-account {
     background: var(--lightest-contrast);
     border-radius: 20px;
 }
-a.my-account > img {
+.my-account:hover, .cart-btn:hover {
+    background: var(--light-contrast);
+}
+.user-icon, .bag-icon {
     width: 32px;
     height: 32px;
-    border-radius: 50px;
+    padding: 4px;
+    border-radius: 50%;
+    display: flex;
+    background: var(--white);
 }
-a.my-account > span {
+.user-icon {
+    background: linear-gradient(180deg, #F74872 0%, #34326D 50%, #4B499F 100%);
+}
+:is(.my-account, .cart-btn) p {
     font-size: 13px;
     color: var(--high-contrast);
 }
@@ -294,4 +303,35 @@ span.plus-icon::after {
 .horizontal {
     display: block;
     border-bottom: 1px solid var(--lower-contrast);
+}
+/* Footer Style */
+.footer-content {
+    padding: 64px 64px 48px;
+    background-color: var(--high-contrast);
+    color: var(--white);
+    font-size: 13px;
+    line-height: 1.25;
+    border-radius: 8px;
+    background-image: url(../img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-row {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-row .footer-left {
+    flex: 0 0 200px;
+}
+.footer-row > *:not(.footer-left, span) {
+    flex: 0 0 120px;
+}
+
+
+
+/* Main Area Style */
+main {
+    padding-top: 72px;
 }

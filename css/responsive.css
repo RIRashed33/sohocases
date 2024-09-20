@@ -43,15 +43,11 @@
         transform: rotate(47deg);
         top: -8.5px;
     }
-    a.my-account {
+    .my-account, .cart-btn {
         padding: 4px;
     }
-    a.my-account span {
+    :is(.my-account, .cart-btn) p {
         display: none;
-    }
-    a.my-account img {
-        width: 30px;
-        height: 30px;
     }
     nav.main-nav {
         position: fixed;
@@ -75,6 +71,9 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
+    }
+    main {
+        padding-top: 64px;
     }
 
 
