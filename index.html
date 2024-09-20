@@ -41,7 +41,7 @@
                             <img src="./img/icon/user-gradient.png" alt="">
                             <span>My Account</span>
                         </a>
-                        <a href="#" class="my-account">
+                        <a href="#cartCanvasRight" data-bs-toggle="offcanvas" class="my-account cart-btn">
                             <img src="./img/icon/bag-wrap.png" alt="">
                             <span>1 Item</span>
                         </a>
@@ -51,60 +51,170 @@
         </div>
     </header>
 
-    <div class="product-cart">
-        <div class="cart-heading">
-            <h5>Shopping Cart</h5>
-            <button class="close-icon">
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-        <div class="cart-content">
-            <div class="cart-items">
-                <div class="single-product">
-                    <div class="cart-product-img">
-                        <img src="./img/cart-item-sample.jpg" alt="">
-                    </div>
-                    <div class="cart-product-details">
-                        <div class="d-flex gap-3">
-                            <p>Product name case</p>
-                            <p>$23.63</p>
-                        </div>
-                        <div class="product-discout">
-                            <p>$25.99</p>
-                            <p>$23.63</p>
-                            <p>10% OFF</p>
-                        </div>
-                        <div class="cart-product-action">
-                            <div class="product-action-btn">
-                                <button class="favourite-btn">
-                                    <img src="./img/icon/favorite.png" alt="">
-                                </button>
-                                <button class="remove-btn">
-                                    <img src="./img/icon/remove.png" alt="">
-                                </button>
-                            </div>
-                            <div class="product-qty">
-                                <button class="decrement-btn">
-                                    <span class="minus-icon"></span>
-                                </button>
-                                <button class="increment-btn">
-                                    <span class="plus-icon"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+    <div class="offcanvas offcanvas-end cart-canvas" id="cartCanvasRight">
+        <div class="product-cart">
+            <div class="cart-heading">
+                <h5>Shopping Cart</h5>
+                <button class="close-btn" data-bs-dismiss="offcanvas">
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
-            <div class="cart-checkout">
-                <div class="cart-subtotal">
-                    <p>Subtotal</p>
-                    <p>$94.52</p>
+            <div class="cart-content">
+                <div class="cart-products">
+                    <div class="single-product">
+                        <div class="cart-product-img">
+                            <img src="./img/cart-item-sample.png" alt="">
+                        </div>
+                        <div class="cart-product-details">
+                            <div class="product-title">
+                                <p class="fw-medium">Product name case</p>
+                                <p class="fw-medium">$23.63</p>
+                            </div>
+                            <div class="product-discout">
+                                <p class="base-price">$25.99</p>
+                                <p class="fw-bold">$23.63</p>
+                                <p class="off-parcent fw-bold">10% OFF</p>
+                            </div>
+                            <div class="cart-product-action">
+                                <div class="product-action-btn">
+                                    <button class="favourite-btn">
+                                        <img src="./img/icon/favorite.png" alt="">
+                                    </button>
+                                    <button class="remove-btn">
+                                        <img src="./img/icon/remove.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="product-qty-box">
+                                    <button class="qty-control-btn">
+                                        <span class="minus-icon"></span>
+                                    </button>
+                                    <span>1</span>
+                                    <button class="qty-control-btn">
+                                        <span class="plus-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-product">
+                        <div class="cart-product-img">
+                            <img src="./img/cart-item-sample.png" alt="">
+                        </div>
+                        <div class="cart-product-details">
+                            <div class="product-title">
+                                <p class="fw-medium">Product name case</p>
+                                <p class="fw-medium">$23.63</p>
+                            </div>
+                            <div class="product-discout">
+                                <p class="base-price">$25.99</p>
+                                <p class="fw-bold">$23.63</p>
+                                <p class="off-parcent fw-bold">10% OFF</p>
+                            </div>
+                            <div class="cart-product-action">
+                                <div class="product-action-btn">
+                                    <button class="favourite-btn">
+                                        <img src="./img/icon/favorite.png" alt="">
+                                    </button>
+                                    <button class="remove-btn">
+                                        <img src="./img/icon/remove.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="product-qty-box">
+                                    <button class="qty-control-btn">
+                                        <span class="minus-icon"></span>
+                                    </button>
+                                    <span>1</span>
+                                    <button class="qty-control-btn">
+                                        <span class="plus-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-product">
+                        <div class="cart-product-img">
+                            <img src="./img/cart-item-sample.png" alt="">
+                        </div>
+                        <div class="cart-product-details">
+                            <div class="product-title">
+                                <p class="fw-medium">Product name case</p>
+                                <p class="fw-medium">$23.63</p>
+                            </div>
+                            <div class="product-discout">
+                                <p class="base-price">$25.99</p>
+                                <p class="fw-bold">$23.63</p>
+                                <p class="off-parcent fw-bold">10% OFF</p>
+                            </div>
+                            <div class="cart-product-action">
+                                <div class="product-action-btn">
+                                    <button class="favourite-btn">
+                                        <img src="./img/icon/favorite.png" alt="">
+                                    </button>
+                                    <button class="remove-btn">
+                                        <img src="./img/icon/remove.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="product-qty-box">
+                                    <button class="qty-control-btn">
+                                        <span class="minus-icon"></span>
+                                    </button>
+                                    <span>1</span>
+                                    <button class="qty-control-btn">
+                                        <span class="plus-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="single-product">
+                        <div class="cart-product-img">
+                            <img src="./img/cart-item-sample.png" alt="">
+                        </div>
+                        <div class="cart-product-details">
+                            <div class="product-title">
+                                <p class="fw-medium">Product name case</p>
+                                <p class="fw-medium">$23.63</p>
+                            </div>
+                            <div class="product-discout">
+                                <p class="base-price">$25.99</p>
+                                <p class="fw-bold">$23.63</p>
+                                <p class="off-parcent fw-bold">10% OFF</p>
+                            </div>
+                            <div class="cart-product-action">
+                                <div class="product-action-btn">
+                                    <button class="favourite-btn">
+                                        <img src="./img/icon/favorite.png" alt="">
+                                    </button>
+                                    <button class="remove-btn">
+                                        <img src="./img/icon/remove.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="product-qty-box">
+                                    <button class="qty-control-btn">
+                                        <span class="minus-icon"></span>
+                                    </button>
+                                    <span>1</span>
+                                    <button class="qty-control-btn">
+                                        <span class="plus-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <span class="horizontal"></span>
-                <div class="checkout">
-                    <button class="">go to checkout <img src="./img/icon/arrow-top-right.png" alt=""></button>
+                <div class="cart-checkout">
+                    <div class="cart-subtotal">
+                        <p>Subtotal</p>
+                        <p>$94.52</p>
+                    </div>
+                    <span class="horizontal"></span>
+                    <div class="checkout">
+                        <button class="primary-gradient-arrow">go to checkout <img src="./img/icon/arrow-top-right.png" alt=""></button>
+                    </div>
                 </div>
             </div>
         </div>

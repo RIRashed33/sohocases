@@ -80,6 +80,25 @@
 
 
 }
+@media screen and (max-width: 767.9px){
+    body {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .product-cart {
+        padding: 12px;
+    }
+    .cart-checkout {
+        padding: 16px;
+        gap: 16px;
+    }
+    .single-product, .product-title {
+        gap: 12px;
+    }
+
+
+
+}
 @media screen and (min-width: 992px){
     nav.main-nav ul li a:hover {
         font-weight: 600;
