@@ -94,7 +94,7 @@
         padding: 16px;
         gap: 16px;
     }
-    .single-product, .product-title {
+    .single-cart-product, .cart-product-title {
         gap: 12px;
     }
     .footer-row > * {
